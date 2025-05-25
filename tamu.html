@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Buku Tamu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ADD8E6; 
+            animation: slide-up 1s ease-out;
+        }
+
+        .contak {
+            text-align: center;
+            background-color: #ADD8E6;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .contak a {
+            margin: 0 15px;
+            color: #3366cc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .contak a:hover {
+            transform: scale(1.1);
+            color: #1a53ff;
+        }
+
+        .form-container {
+            background-color: #d0e3ff;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: slide-up 1.5s ease-out;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        legend h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        input[type="file"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #4e7be7;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #335fd1;
+        }
+
+        @keyframes slide-up {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <script src="jawa 1.js"></script>
+    <div class="contak">
+        <a href="home.html">Home</a> |
+        <a href="galeri.html">Galeri</a> |
+        <a href="tentang saya.html">Tentang Saya</a> |
+        <a href="tamu.html">Buku Tamu</a>
+    </div>
+
+    <div class="form-container">
+        <form action="prosessForm.php" method="GET">
+            <fieldset>
+                <legend><h1>Form Buku Tamu</h1></legend>
+                <table>
+                    <tr>
+                        <td>Nama Calon Siswa</td>
+                        <td><input type="text" name="nama" required /></td>
+                    </tr>       
+
+                    <tr>
+                        <td>Tempat/Tanggal Lahir</td>
+                        <td><input type="text" name="tempatLahir" /> 
+                            <input type="date" name="tanggal" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Agama</td>
+                        <td>
+                            <select name="agama">
+                                <option value="islam">Islam</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="katolik">Katolik</option>
+                                <option value="budha">Budha</option>
+                                <option value="hindu">Hindu</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Alamat</td>
+                        <td><textarea name="komentar" rows="4" cols="50"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td>No Telp/Hp</td>
+                        <td><input type="number" name="number" /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="jenisKelamin" value="Pria" /> Pria
+                            <input type="radio" name="jenisKelamin" value="Wanita" /> Wanita
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Hobi</td>
+                        <td>
+                            <input type="checkbox" name="hobi" value="Membaca" /> Membaca
+                            <input type="checkbox" name="hobi" value="Menulis" /> Menulis
+                            <input type="checkbox" name="hobi" value="Olahraga" /> Olahraga
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Pas Foto</td>
+                        <td><input type="file" name="foto" /></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" name="submit" value="SUBMIT" />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

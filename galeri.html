@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri Foto</title>
+  <style>
+    body {
+      background-color: #ADD8E6;
+      margin: 0;
+      padding: 20px;
+      animation: fade-in 1s ease-in;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoom-in {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+      animation: fade-in 1.2s ease;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-bottom: 20px;
+      animation: fade-in 1.4s ease;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #4e7be7;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: soft blue ;
+    }
+
+    .akane {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .akane video {
+      box-shadow: 0 0 20px rgba(135, 206, 250, 0.6);
+      border-radius: 12px;
+      width: 98%;
+      max-width:900px;
+      height:auto;
+      
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      animation: fade-in 1.6s ease;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      animation: zoom-in 0.8s ease forwards;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #555;
+      animation: fade-in 2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="social-links">
+    <a href="home.html">Home</a> |
+    <a href="tentang saya.html">Tentang Saya</a> |
+    <a href="tas.html">Kontak</a> |
+    <a href="tamu.html">Buku Tamu</a>
+  </div>
+
+  <h1>Galeri Saya</h1>
+
+  <div class="akane">
+    <video width="400" height="480" controls autoplay muted loop>
+      <source src="Akane.1.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="gallery">
+    <img src="akane1.jpg" alt="Foto 1">
+    <img src="akane2.jpg" alt="Foto 2">
+    <img src="akane3.jpg" alt="Foto 3">
+    <img src="akane4.jpg" alt="Foto 4">
+    <img src="akane5.jpeg" alt="Foto 5">
+    <img src="akane6.jpeg" alt="Foto 6">
+    <img src="akane7.jpeg" alt="Foto 7">
+    <img src="akane8.jpeg" alt="Foto 8">
+    <img src="akane9.jpeg" alt="Foto 9">
+    <img src="akane10.jpeg" alt="Foto 10">
+    <img src="akane11.jpg" alt="Foto 11">
+    <img src="akane12.jpg" alt="Foto 12">
+    <img src="akane13.jpg" alt="foto 13">
+    <img src="akane14.jpg" alt="foto 14">
+    <img src="akane15.jpg" alt="foto 15">
+    <img src="akane16.jpg" alt="foto 16">
+    <img src="akane17.jpeg" alt="foto 17">
+    <img src="akane18.jpeg" alt="foto 18">
+    
+    </div>
+
+  <footer>
+    <p>&copy; 2025 Rizky Ramdhani - Galeri Pribadi</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizky Ramdhani Personal Website</title>
+  <style>
+    .contak a {
+      margin: 0 10px;
+      color: #4e7be7;
+      text-decoration: none;
+      font-weight: bold;
+      animation: fade-in 1s ease-in-out;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      animation: slide-up 1s ease-out;
+      
+    }
+  @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+   @keyframes slide-up {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      animation: slide-up ease-out;
+    }
+    .sosmed a {
+      margin-right: 15px;
+      color: #25D366;
+      font-weight: bold;
+      text-decoration: none;
+      animation: fade-in 1s ease-in-out;
+    }
+  .email{
+    animation:slide-up 1s easa-in-out;
+    color: black;
+  }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="contak">
+      <a href="home.html">Home</a> |
+      <a href="galeri.html">Galeri</a> |
+      <a href="tentang saya.html">Tentang saya</a> |
+      <a href="tamu.html">Buku tamu</a>
+    </div>
+  </nav>
+
+  <hr />
+
+  <div class="email">
+    <h1>Contact Me</h1>
+    <form action="#">
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="email" placeholder="alamat email" />
+      <br />
+      <label for="message">Pesan</label><br />
+      <textarea id="message" name="message" placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea>
+      <br /><br />
+      <input type="submit" value="Kirim" />
+    </form>
+
+    <div class="sosmed">
+      <h3>Atau bisa hubungi saya lewat:</h3>
+      <a href="https://wa.me/6289507720402" target="_blank">WhatsApp</a>
+      <a href="https://www.instagram.com/zuugelian?igsh=MTdtcWQ3b2xoY2RreQ==" target="_blank" style="color: #E1306C;">Instagram</a>
+    </div>
+  </div>
+
+  <hr />
+
+  <footer style="text-align: center;">
+    <p>&copy; 2025 Rizky Ramdhani.</p>
+  </footer>
+
+</body>
+</html>

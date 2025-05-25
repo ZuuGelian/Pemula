@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Saya</title>
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slide-up {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #d0e7ff;
+      margin: 0;
+      padding: 0;
+      animation: fade-in 1s ease-in;
+    }
+
+    .contak a {
+      margin: 0 10px;
+      color: #4e7be7;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .contak a:hover {
+      color: #2a5caa;
+    }
+
+    header {
+      background-color: #4e7be7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: slide-up 1s ease-in-out;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: slide-up 1.2s ease-in-out;
+    }
+
+    img.profile {
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      animation: fade-in 1.5s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      animation: slide-up 1.3s ease-in-out;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #555;
+      text-align: justify;
+      animation: fade-in 1.6s ease-in-out;
+    }
+
+    .highlight {
+      background-color: #cce6ff;
+      padding: 2px 6px;
+      border-radius: 5px;
+      color: #2a5caa;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+      color: #888;
+      animation: fade-in 2s ease-in;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tentang Saya</h1>
+  </header>
+
+  <nav>
+    <div class="contak">
+      <a href="home.html">Home</a> |
+      <a href="galeri.html">Galeri</a> |
+      <a href="tas.html">Contact me</a> |
+      <a href="tamu.html">Buku tamu</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <img src="akane ku.jpg" alt="Foto Saya" class="profile">
+    <h2>Rizky Ramdhani</h2>
+    <p>
+      Halo! Nama saya <strong>Rizky Ramdhani</strong>. Saya adalah seorang pelajar yang menyukai teknologi, Game, dan anime. Saya suka belajar hal baru, terutama dalam bidang pemrograman dan pengembangan web.
+    </p>
+    <p>
+      Saat ini saya sedang mengembangkan beberapa proyek sederhana menggunakan HTML dan CSS. Tujuan saya adalah menjadi seorang developer yang kreatif dan bermanfaat bagi banyak orang.
+    </p>
+    <p>
+      Hobi saya termasuk jalan jalan, bermain game, serta menonton anime favorit seperti Oshi No Ko dan karakter yang ku suka adalah <span class="highlight">Kurokawa Akane</span>.
+    </p>
+    <p>
+      Ouh iyaa saya lahir di jawa tengah daerah cilacap,lahir pada tanggal 29 bulan 9 tahun 2008,berarti sekarang saya berusia 16 tahun,semoga sajah umur saya masih panjang saya masih ingin melihat betapa indahnya dunia ini >,&lt;
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 Rizky Ramdhani
+  </footer>
+
+</body>
+</html>
